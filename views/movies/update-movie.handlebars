@@ -1,0 +1,14 @@
+<form action="/movies/update/{{updatemovie._id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT">
+
+    <input type="text" name="title" id="" placeholder="moviename" value={{updatemovie.title}}>
+    <input type="date" name="year" id="" value={{updatemovie.year}}>
+    <input type="url" name="url" value="{{updatemovie.url}}">
+    <input type="text" name="category" placeholder="enter the category" value="{{updatemovie.category}}">
+    <input type="text" name="language" placeholder="enter the language" value="{{updatemovie.language}}">
+    <input type="text" name="generes" placeholder="enter the generes" value="{{updatemovie.generes}}">
+    <input type="text" name="certificate" placeholder="certificate name" value="{{updatemovie.certificate}}">
+    <input type="text" name="casting" placeholder="actors name" value="{{updatemovie.casting}}">
+    <input type="text" name="Rating" placeholder="Rating" value="{{updatemovie.Rating}}">
+    <button >update movie</button>
+</form>

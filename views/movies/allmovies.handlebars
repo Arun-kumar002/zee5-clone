@@ -1,0 +1,29 @@
+<h1 id="All_movies">all movies</h1>
+
+{{#each allmovies}}
+
+<section class="all_movies_container">
+    <article class="all_movies">
+<figure style="background: url({{url}}) no-repeat; background-size:  1051px 431px;" ></figure>
+ 
+ 
+  <h1>{{title}}</h1>
+  <aside>
+    <ul>
+    <li>{{year}}</li>
+ <li>{{generes}}</li>
+ <li>{{category}}</li>
+ <li>{{language}}</li>
+ <li>{{casting}}</li>
+ <li>{{certificate}}</li>
+ <li>{{Rating}}*</li>
+ </ul>
+  </aside>
+ 
+ <form action="/movies/{{_id}}?_method=DELETE" method="post">
+ <input type="hidden" name="_method" value="DELETE">
+ <button>DELETE</button>
+ </form>
+ </article>
+ </section>
+{{/each}}
